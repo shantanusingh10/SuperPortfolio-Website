@@ -50,12 +50,17 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-    font-weight: 2.5rem;
+    font-weight: 500;
 
+}
+
+h1{
+    font-size: 2.5rem;
 }
 
 section{
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5 {
@@ -130,7 +135,7 @@ img {
     .container {
         width: var(--container-width-ms);
     }
-    section {
+    section > h2 {
         margin-top: 2rem;
     }
 }
