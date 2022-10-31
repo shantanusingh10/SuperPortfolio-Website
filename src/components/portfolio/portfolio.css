@@ -21,7 +21,12 @@
 .portfolio__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
+    
+}
 
+.portfolio__image {
+    width: 20rem;
+    height: 12rem;
 }
 
 .portfolio__item h3 {
@@ -41,9 +46,13 @@
     
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+        gap: 1rem;
     }
-    
+    .portfolio__image {
+        width: 23rem;
+        height: 12rem;
+       
+    }
 }
 
 
@@ -53,5 +62,10 @@
     .portfolio__container {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .portfolio__image {
+        width: 27rem;
+        height: 12rem;
+       
     }
 }

@@ -21,6 +21,11 @@
     transition: var(--transition);
 }
 
+#email {
+    margin-left: -0.5rem;
+    width: fit-content;
+}
+
 .contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
@@ -69,6 +74,10 @@ input, textarea {
         grid-template-columns: 1fr;
         gap: 2rem;
 
+    }
+    #email{
+        margin-left: calc(50% - 7rem);
+        
     }
 }
 
