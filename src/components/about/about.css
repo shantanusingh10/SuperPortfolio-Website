@@ -96,7 +96,7 @@
 }
 
 
-/* Media Queries for small devices / tablets */
+/* Media Queries for small devices / mobiles */
 
 @media screen and (max-width: 600px ){
     .about__me {
