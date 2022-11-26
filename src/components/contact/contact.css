@@ -66,6 +66,12 @@ input, textarea {
     color: var(--color-white);
 }
 
+.Success{
+    display: none;
+    color: white;
+    border-color: white;
+    font-size: 20;
+}
 /* Media Queries for medium devices / tablets */
 
 @media screen and (max-width: 1024px ){

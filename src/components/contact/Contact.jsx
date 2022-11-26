@@ -5,15 +5,16 @@ import {BsLinkedin} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs, { sendForm } from 'emailjs-com';
+import successMessage from './SuccessMessage';
 
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_7an9x2p', 'template_ramgudl', form.current, 'tTq_gvavO57zWZmtl')
       .then((result) => {
           console.log(result.text);
+          successMessage();
       }, (error) => {
           console.log(error.text);
       });
@@ -38,7 +39,7 @@ const Contact = () => {
             <h4>LinkedIn</h4>
             <h5>Shantanu Singh</h5>
             <a href='https://www.linkedin.com/in/shantanulion/' target="_blank">Connect on LinkedIn</a>
-          </article>
+          </article>  
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
@@ -52,7 +53,11 @@ const Contact = () => {
           <input type="email" name = "email" placeholder= "Your Email" required />
           <textarea name='message' rows="7" placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
+          <div class="Success" id="success">
+            Thank you for contacting. I'll get back to you shortly.
+        </div>
         </form>
+        
       </div>
     </section>
   )

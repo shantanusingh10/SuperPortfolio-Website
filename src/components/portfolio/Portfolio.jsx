@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/java_springboot_ems.PNG'
 import IMG2 from '../../assets/react recipe book.PNG'
-import IMG3 from '../../assets/me.png'
+import IMG3 from '../../assets/fb_clone.PNG'
 import IMG4 from '../../assets/me.png'
 import IMG5 from '../../assets/me.png'
 import IMG6 from '../../assets/me.png'
@@ -18,14 +18,14 @@ const data = [
   },
   {
     id: 2,
-    image: IMG4,
-    title: 'project2',
-    github: 'github.com',
-    demo: 'linktodemo.com'
+    image: IMG3,
+    title: 'Facebook clone',
+    github: 'https://github.com/shantanusingh10/facebook-clone-backend',
+    demo: 'https://fb-clone-fe.herokuapp.com/'
   },
   {
     id: 3,
-    image: IMG3,
+    image: IMG4,
     title: 'project3',
     github: 'github.com',
     demo: 'linktodemo.com'
